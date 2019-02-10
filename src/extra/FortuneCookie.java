@@ -18,6 +18,7 @@ JFrame frame = new JFrame();
 frame.setVisible(true);
 JButton button = new JButton();
 frame.add(button);
+
 button.setText("Click for your fortune");
 button.addActionListener(this);    
 System.out.println("Button clicked");
