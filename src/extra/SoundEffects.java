@@ -17,13 +17,22 @@ public class SoundEffects implements ActionListener {
 	public void showButton() {
 		JFrame frame = new JFrame();
 		frame.setVisible(true);
-		JButton button = new JButton();
-		frame.add(button);
+		JButton LeftButton = new JButton();
+		JButton MiddleButton = new JButton();
+		JButton RightButton = new JButton();
+		frame.add(RightButton);
+		frame.add(MiddleButton);
+		frame.add(LeftButton);
 		JPanel panel = new JPanel();
 		panel.add(frame);
-		button.setText("Click for your fortune");
-		button.addActionListener(this);    
-		System.out.println("Button clicked");
+		frame.pack();
+		LeftButton.setText("Click for your fortune");
+		MiddleButton.setText("");
+		RightButton.setText("");
+		LeftButton.addActionListener(this); 
+		MiddleButton.addActionListener(this); 
+		RightButton.addActionListener(this);
+		
 		
 
 			}
