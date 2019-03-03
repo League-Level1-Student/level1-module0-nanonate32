@@ -58,8 +58,8 @@ public class BodyPartQuiz {
             }
             showNextImage();
 		    
-		
-        if(guess.equals ("leonardo")&&i==1) {
+		String dress = JOptionPane.showInputDialog("Who is this?");
+        if(dress.equals ("leonardo")&&i==1) {
         	JOptionPane.showMessageDialog(null, "You are correct!");
         	score ++;
         	JOptionPane.showMessageDialog(null, "Your score is " + score);
@@ -70,8 +70,8 @@ public class BodyPartQuiz {
         }
         showNextImage();
 	    
-		
-        if(guess.equals ("morgan")&&i==2) {
+		String less = JOptionPane.showInputDialog("Who is this?");
+        if(less.equals ("morgan")&&i==2) {
         	JOptionPane.showMessageDialog(null, "You are correct!");
         	score ++;
         	JOptionPane.showMessageDialog(null, "Your score is " + score);
@@ -82,8 +82,8 @@ public class BodyPartQuiz {
         }
         showNextImage();
 	    
-		
-        if(guess.equals ("jack")&&i==3) {
+		String confess = JOptionPane.showInputDialog("Who is this?");
+        if(confess.equals ("jack")&&i==3) {
         	JOptionPane.showMessageDialog(null, "You are correct!");
         	score ++;
         	JOptionPane.showMessageDialog(null, "Your score is " + score);

@@ -1,4 +1,4 @@
-package extra;
+
 
 import java.applet.AudioClip;
 import java.awt.event.ActionEvent;
@@ -10,7 +10,9 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class SoundEffects implements ActionListener {
-
+	JButton LeftButton = new JButton();
+	JButton MiddleButton = new JButton();
+	JButton RightButton = new JButton();
 	public static void main(String[] args) {
 		SoundEffects sf = new SoundEffects();
 		sf.showButton();
@@ -20,9 +22,7 @@ public class SoundEffects implements ActionListener {
 	public void showButton() {
 		JFrame frame = new JFrame();
 		frame.setVisible(true);
-		JButton LeftButton = new JButton();
-		JButton MiddleButton = new JButton();
-		JButton RightButton = new JButton();
+		
 		frame.add(RightButton);
 		frame.add(MiddleButton);
 		frame.add(LeftButton);
@@ -45,8 +45,16 @@ public class SoundEffects implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		if (e.getSource("460036")) {
+		JButton buttonPressed = (JButton) e.getSource();
 
+		if(buttonPressed == LeftButton) {
+	playSound("460498__arnaud-coutancier__goat-bells.wav");	 
+		}
+		if(buttonPressed == RightButton) {
+			playSound("460130__gis-sweden__electronic-minute-no-240-soft-ebm-beat.wav");
+		}
+		if(buttonPressed == MiddleButton) {
+			playSound("460036__alpacaguy__man-screaming-in-pain.wav");
 		}
 	}
 
