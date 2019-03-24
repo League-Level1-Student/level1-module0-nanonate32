@@ -17,9 +17,18 @@ static Robot Nathaniel = new Robot();
         for (int i = 0; i < 10; i++) {
 			flathouse("small", Color.BLUE);
 		}
-        Nathaniel.move(100);
+        Nathaniel.move(50);
         Nathaniel.turn(-90);
-        Nathaniel.move
+        Nathaniel.move(60);
+        Nathaniel.turn(45);
+        Nathaniel.move(50);
+        Nathaniel.turn(90);
+        Nathaniel.move(50);
+        Nathaniel.turn(45);
+        Nathaniel.move(60);
+        Nathaniel.turn(-90);
+        Nathaniel.move(50);
+        
 	}
 	
 	static void flathouse(String size, Color color) {
@@ -38,7 +47,7 @@ static Robot Nathaniel = new Robot();
 		 
 		   Nathaniel.penDown();
 		   Nathaniel.setPenColor(Color.BLUE);
-	        //Nathaniel.turn(90);
+	        Nathaniel.turn(90);
 	        Nathaniel.move(20);
 	        Nathaniel.turn(-90);
 	        Nathaniel.move(height);
@@ -48,5 +57,30 @@ static Robot Nathaniel = new Robot();
 	        Nathaniel.move(height);
 	        Nathaniel.turn(-90);
 	        Nathaniel.move(20);
+	        
 }
+	static void pointyhouse(String size2, Color color2) {
+		int tall = 60;
+		if(size2.equals("small")) {
+			tall = 60;
+		}
+		 if(size2.equals("medium")) {
+			  tall = 120;
+
+		 }
+			if(size2.equals("large")) {
+				 tall = 250;
+			}
+			  Nathaniel.move(50);
+		        Nathaniel.turn(-90);
+		        Nathaniel.move(60);
+		        Nathaniel.turn(45);
+		        Nathaniel.move(50);
+		        Nathaniel.turn(90);
+		        Nathaniel.move(50);
+		        Nathaniel.turn(45);
+		        Nathaniel.move(60);
+		        Nathaniel.turn(-90);
+		        Nathaniel.move(50);
+	}
 }
